@@ -1,0 +1,242 @@
+{
+    "title":"Room Type List",
+    "error":null,
+    "room_type_list":[{
+        "services":[{
+            "_id":"5eaa988bf750b17452867367",
+            "name":"Telefone",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867368",
+            "name":"Wi-fi gratuito",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867369",
+            "name":"Ar condicionado",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867377",
+            "name":"Televisão LCD",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736b",
+            "name":"Canais por cabo",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736d",
+            "name":"Cofre",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736e",
+            "name":"Casa de banho privativa com telefone",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736f",
+            "name":"Secador de cabelo",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867370",
+            "name":"Espelho de maquilhagem",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867371",
+            "name":"Produtos de higiene pessoal gratuitos",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286737a",
+            "name":"Kitchenette",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867372",
+            "name":"Fechadura eletrónica de segurança",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867376",
+            "name":"Serviço de quarto 24 horas",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286737b",
+            "name":"Frigorífico",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286737c",
+            "name":"Micro-ondas",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867378",
+            "name":"Chaleira",
+            "__v":0
+          
+        }],
+        "_id":"5eaa988bf750b17452867385",
+        "hotel":"5eaa988bf750b17452867366",
+        "name":"Quarto Standard",
+        "price_high_epoch":210,
+        "price_low_epoch":70,
+        "number_of_rooms":114,
+        "__v":0 
+    },{
+        "services":[{
+            "_id":"5eaa988bf750b17452867367",
+            "name":"Telefone",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867368",
+            "name":"Wi-fi gratuito",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867369",
+            "name":"Ar condicionado",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867377",
+            "name":"Televisão LCD",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736b",
+            "name":"Canais por cabo",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736d",
+            "name":"Cofre",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736e",
+            "name":"Casa de banho privativa com telefone",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736f",
+            "name":"Secador de cabelo",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867370",
+            "name":"Espelho de maquilhagem",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867371",
+            "name":"Produtos de higiene pessoal gratuitos",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286737a",
+            "name":"Kitchenette",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867372",
+            "name":"Fechadura eletrónica de segurança",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867376",
+            "name":"Serviço de quarto 24 horas",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867379",
+            "name":"Varanda",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286737b",
+            "name":"Frigorífico",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286737c",
+            "name":"Micro-ondas",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867378",
+            "name":"Chaleira",
+            "__v":0
+        }],
+        "_id":"5eaa988bf750b17452867386",
+        "hotel":"5eaa988bf750b17452867366",
+        "name":"Suíte Júnior",
+        "price_high_epoch":250,
+        "price_low_epoch":90,
+        "number_of_rooms":98,
+        "__v":0  
+    },{
+        "services":[
+          {
+            "_id":"5eaa988bf750b17452867367",
+            "name":"Telefone",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867368",
+            "name":"Wi-fi gratuito",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867369",
+            "name":"Ar condicionado",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867377",
+            "name":"Televisão LCD",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736b",
+            "name":"Canais por cabo",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736d",
+            "name":"Cofre",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736e",
+            "name":"Casa de banho privativa com telefone",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286736f",
+            "name":"Secador de cabelo",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867370",
+            "name":"Espelho de maquilhagem",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867371",
+            "name":"Produtos de higiene pessoal gratuitos",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286737a",
+            "name":"Kitchenette",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867372",
+            "name":"Fechadura eletrónica de segurança",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867376",
+            "name":"Serviço de quarto 24 horas",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867375",
+            "name":"Sala-de-estar",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286737d",
+            "name":"Sofá-cama",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867379",
+            "name":"Varanda",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286737b",
+            "name":"Frigorífico",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b1745286737c",
+            "name":"Micro-ondas",
+            "__v":0
+        },{
+            "_id":"5eaa988bf750b17452867378",
+            "name":"Chaleira",
+            "__v":0
+        }],
+        "_id":"5eaa988bf750b17452867387",
+        "hotel":"5eaa988bf750b17452867366",
+        "name":"Suíte Sénior",
+        "price_high_epoch":240,
+        "price_low_epoch":120,
+        "number_of_rooms":8,
+        "__v":0  
+    }]
+}

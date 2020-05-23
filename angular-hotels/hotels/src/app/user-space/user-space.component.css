@@ -1,0 +1,14 @@
+.btnWrapper{
+    margin-left: 35%;
+}
+
+.button{
+    display: inline-block;
+    margin-right: 5%;
+}
+
+@media only screen and (max-width: 767px) {
+    .button{
+        width: 30%;
+    }
+}

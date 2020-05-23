@@ -1,0 +1,142 @@
+.hotel{
+    color: black;
+    display: grid;
+    grid-template: 5% 30% 3fr / 1fr 4fr 1fr;
+}
+
+button{
+    position: absolute;
+}
+.name{
+    grid-area: 1 / 2 / span 1 / span 1;
+    text-align: center;
+    font-size: x-large;
+}
+
+.infoImage{
+    grid-area: 2 / 1 / span 1 / span 1;
+    text-align: center;
+    font-size: small;
+}
+
+.images{
+    display: grid;
+    grid-area: 2 / 2 / span 1 / span 1;
+    grid-template: 10% 80% 10% 10%/ 1fr 1.5fr 1fr;
+    margin-bottom: 2%;
+}
+
+.centerImageWrapper,.leftImageWrapper, .rightImageWrapper{
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.centerImageWrapper{
+    grid-area: 1 / 2 / span 3 / span 1;
+}
+
+.leftImageWrapper, .rightImageWrapper{
+    row-gap: 50%;
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+.rightImageWrapper{
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+
+.img-center,.img-left,.img-right{
+    transition: all 250ms ease-in-out;
+}
+
+.img-center:hover,.img-left:hover,.img-right:hover{
+    transform: scale(1.1);
+}
+
+.img-right,.img-left,.img-center{
+    width: 100%;
+    height: 100%;
+}
+
+.img-right,.img-left{
+    opacity: 0.5;
+    transition-property: all;
+    transition-duration: 250ms;
+    cursor: pointer;
+}
+
+.img-right:hover,.img-left:hover{
+    opacity: 0.7;
+}
+
+.left-arrow,.right-arrow{
+    z-index: 1;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-arrow{
+    grid-area: 4 / 1 / span 1 / span 1;
+}
+
+.right-arrow{
+    grid-area: 4 / 3 / span 1 / span 1;
+    transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */ 
+    .hotel{
+        color: black;
+        display: grid;
+        grid-template: 4% 1fr 9fr / 0.5fr 10fr 0.5fr;
+    }
+    .room-types{
+        height: 7%;
+     }
+
+     .left-arrow,.right-arrow{
+        margin-top: 8%;
+    }
+
+    .right-arrow{
+        margin-left: 21%;
+    }
+ }
+
+.info{
+    border: 1px black solid;
+    grid-area: 3 / 2 / span 1 / span 1;
+    margin-top: 20px;
+    margin-bottom: 5%;
+}
+
+.info-1,.servicos,.room-types,.epocas{
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.servicos,.info-1{
+    border: 1px solid black;
+}
+
+.room-types{
+    min-width: 100px;
+    width: 20%;
+    text-align: center;
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    transition-property: background;
+    transition-duration: 500ms;
+
+    cursor: pointer;
+}
+
+.room-types:hover{
+    background-color: black;
+    color: white;
+}

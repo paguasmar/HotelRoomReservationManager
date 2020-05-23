@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <div class="title">Confirmação de reserva</div>
+    <div class="info">
+        <ul class="list">
+            <li><b>Reserva em nome de :</b>{{info.name}}</li>
+            <li><b>Nome do quarto: </b>{{info.room_type.name}}</li>
+            <li><b>Data de inicio: </b>{{info.begin_date}}</li>
+            <li><b>Nome de fim: </b>{{info.end_date}}</li>
+            <li><b>Email: </b>{{info.email}}</li>
+            <li><b>Telefone: </b>{{info.telephone}}</li>
+            <li><b>Morada: </b>{{info.address}}</li>
+            <li><b>NIF: </b>{{info.nif}}</li>
+            <li><b>Cartão de multibanco: </b>{{info.card_number}}</li>
+            <li><b>Data de validade do cartão: </b>{{info.validade}}</li>
+            <li><b>Cvv do cartão: </b>{{info.cvv}}</li>
+            <li><b>Preço final: </b>{{info.price}}</li>
+        </ul>  
+        <div class="buttons">
+            <div class="btnd button" (click)="cancel()">Cancelar</div>
+            <div class="button" (click)="book()">Confimar!</div>
+        </div>
+    </div>    
+</div>

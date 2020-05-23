@@ -1,0 +1,25 @@
+{
+  "name": "express-hotels",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=express-hotels:* npm run devstart"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-validator": "^6.4.1",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.10",
+    "morgan": "~1.9.0",
+    "node": "^14.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

@@ -1,0 +1,91 @@
+<!-- todo 2 caixas de texto para inserir min price e max price. -->
+<!-- 1 botão que ao se clicar nele chamar a função de filtragem na lista -->
+<!-- associar evento ao botão -->
+<div class="container" *ngIf="info">
+    <div class="row text-center">
+        <h1>{{name}}</h1>
+    </div>
+    <div class="epocas">
+        A época baixa decorre desde 15 de janeiro a 31 e maio e desde 30 de setembro a 15 de dezembro
+        <br>
+        A época alta decorre desde 1 de junho a 29 de Setembto e desde 16 de dezembro a 14 de janeiro
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <label for="baixa">Preço mínimo &nbsp;&nbsp;</label>
+            <input name="baixa" id="baixa" type="number"/>
+        </div>
+        <div class="col-md-4">
+            <label for="alta">Preço máximo &nbsp;</label>
+            <input name="alta" id="alta" type="number"/>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+            <label for="inicio">Data de inicio &nbsp;</label>
+            <input name="inicio" id="inicio" type="date"/>
+        </div>
+        <div class="col-md-4">
+            <label for="fim">Data de fim &nbsp;</label>
+            <input name="fim" id="fim" type="date"/>
+        </div>
+    </div>
+</div>
+<br>
+<div class="btnWrapper">
+    <div id="filterBtn">
+        <div class="button" (click)="filter()">
+            Filtrar
+        </div>
+    </div>
+    <div id="compareBtn">
+        <div class="button" (click)="compare()">
+            Comparar
+        </div>
+    </div>
+    <div id="cleanBtn">
+        <div class="button" (click)="resetList()">
+            Limpar
+        </div>
+    </div>
+</div>
+<br>
+<div class="container" *ngIf="room_types">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4 types" *ngFor="let room_type of room_types_display" (click)="add(room_type)" id="{{room_type.name}}">
+           <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
+            <div class="tipo-de-quarto-name">
+                {{room_type.name}}
+            </div>
+            <div class="info">
+                <span class="room-type-info room-type-number">Número de quartos: {{room_type.number_of_rooms}} </span>
+                <br>
+                <span class="room-type-info">Preço época baixa: {{room_type.price_low_epoch}} </span>
+                <br>
+                <span class="room-type-info">Preço época alta: {{room_type.price_high_epoch}} </span>
+            </div>
+            <div class="servicos">
+                <span>Serviços oferecidos: </span>
+                <ul class="room_type">
+                    <li *ngFor="let service of room_type.services">
+                        <span #allServices id="{{service._id}}{{room_type._id}}">{{service.name}}</span>
+                    </li>     
+                </ul>         
+            </div>
+            <div class="price_between_dates">
+                <span>Preço: {{calcPriceForRoom(room_type)}} €</span>
+            </div>
+            <div class="col-md-6 types">
+                <div class="book-now" (click)="bookRedirect(room_type)">
+                    Reservar!
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>

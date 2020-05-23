@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>{{tittle}}</h1>
+</div>
+
+<div class="container">
+    <ul class="hotels">
+
+        <li *ngFor="let hotel of hotels">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="thumbnail">
+                        <a routerLink="/hotel/{{hotel._id}}"><h4>{{hotel.name}}</h4>
+                            <div class="wrapper">
+                                <img class="img-fluid" height="300" alt="Responsive image" src={{hotel.image}}>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+</div>

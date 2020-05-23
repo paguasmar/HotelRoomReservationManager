@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+.button{
+    text-align: center;
+    border: 1px solid black;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 5%;
+    padding-top: 7px;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}

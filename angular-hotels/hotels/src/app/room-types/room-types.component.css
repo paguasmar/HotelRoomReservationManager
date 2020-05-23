@@ -1,0 +1,126 @@
+.epocas{
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 2%;
+}
+
+.wrapper{
+    display: grid;
+    grid-template: 5% 2fr 3fr / 1fr 2fr 1fr;
+}
+
+.hotel{
+    grid-area: 1 / 2 / span 1 / span 1;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.tipo-de-quarto-name{
+    font-size: 28px;
+}
+
+.tipos-de-quarto{
+    grid-area: 2 / 2 / span 1 / span 1;
+    
+}
+
+.btnWrapper{
+    margin-left: 35%;
+}
+
+#cleanBtn,#compareBtn,#filterBtn{
+    display: inline-block;
+    width: 10%;
+    height: 30%;
+    margin-right: 5%;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .btnWrapper{
+        margin-left: 15%;
+    }
+    #cleanBtn,#compareBtn,#filterBtn{
+        width: 25%;
+    }
+ }
+
+.tipo-de-quarto-selected{
+    background-color: grey;
+    color: white;
+
+    animation-name: "selected";
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-duration: 500ms;
+}
+
+.tipo-de-quarto-non-selected{
+    background-color: white;
+    color: black;
+
+    animation-name: "nonSelected";
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-duration: 500ms;
+}
+
+@keyframes selected{
+    0%{
+        background-color: white;
+        color: black; 
+    }
+    100%{
+        background-color: grey;
+        color: white;
+    }
+}
+
+@keyframes nonSelected{
+    0%{
+        background-color: grey;
+        color: white;   
+    }
+    100%{
+        background-color: white;
+        color: black;
+    }
+}
+
+.room-type-number{
+    font-size: 20px;
+}
+
+.types{
+    cursor: pointer;
+}
+
+.col-md-6 {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
+
+.book-now{
+    text-align: center;
+    font-size: x-large;
+    border: 1px solid black;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 250ms;
+}
+
+.book-now:hover{
+    background-color: black;
+    color: white;
+}
+
+.equal{
+    background-color:blue;
+}
+
+.diff{
+    background-color:green;
+}
+
+.unique-service{
+    color: green;
+}

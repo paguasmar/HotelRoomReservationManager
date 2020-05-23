@@ -1,0 +1,52 @@
+{
+    "list":[
+        {
+            "name": "Douro Vinhas",
+            "description": "Com uma vista de cortar o fôlego para o Rio Douro e para o Rio Tedo, é no coração do Douro Vinhateiro que surge o Hotel Douro Vinhas. Com uma forte componente de agro e enoturismo, esta unidade estende-se pela centenária Quinta do Moreira.\nNa margem sul do Douro, perto da pitoresca aldeia do Marmelal, a propriedade que acolhe o Hotel Douro Vinhas fica muito próxima de um dos dois marcos mandados construir pelo Marquês de Pombal em 1757. Classificados como imóveis de interesse público, serviam para demarcar a zona dos vinhos generosos do Douro, à época sob jurisdição da Companhia Geral da Agricultura das Vinhas Douro. Nascia assim a primeira região demarcada de vinhos do mundo. Hoje, os vinhedos em socalcos tornam única a paisagem que rodeia esta unidade.\nNuma primeira fase com apenas sete quartos, o Hotel Douro Vinhas distingue-se pela localização, pelo charme e pela exclusividade. Aqui poderá desfrutar da calma e do silêncio, do cenário, mas também a piscina exterior, da gastronomia regional do restaurante Moreira, cujos grandes janelões permitem admirar a envolvente. Mas também das visitas à adega e provas de vinhos do Porto, produzidos no local.\nPoderá ainda aproveitar para passear entre as vinhas, pelo olival ou pelo amendoal (particularmente bonito durante as amendoeiras em flor), sempre com o Tedo e o Douro como companhia. Para completar a estadia, faça um cruzeiro fluvial, visite as quintas vinícolas da região ou faça um passeio de comboio. Ver as amendoeiras em flor ou participar nas vindimas são outras sugestões.",
+            "adress": "Hotel Douro Vinhas\nQuinta do Moreira – Marmelal\n5110-672 Armamar\nPortugal ",
+            "coordinates": "41°09'26.0\"N 7°38'26.0\"W",
+            "phoneNumber": {
+                    "id": 351, 
+                    "number": 254249000
+                },
+            "email": "dourovinhas@hoteispsi.com",
+            "images": ["hotel1_1","hotel1_2","hotel1_3","hotel1_4","hotel1_5","hotel1_6","hotel1_7","hotel1_8","hotel1_9","hotel1_10"],
+            "services": ["Adega Moreira", "Acesso gratuito à internet via wi-fi", "Serviço de lavandaria", "Acessos para pessoas com mobilidade reduzida", "Receção 24 horas", "Biblioteca"]
+            
+
+        },
+
+        {
+            "name": "A Ver o Mar",
+            "description": "Situado na pitoresca vila da Ericeira, mesmo em cima da praia, este hotel com história e tradição, que resulta da reabilitação do marcante Hotel de Turismo da Ericeira, tem como cenário o Oceano Atlântico.\nA 30 minutos de Lisboa, com acesso direto por autoestrada, o hotel A Ver o Mar dispõe de quatro tipologias de quarto, destacando-se os que têm varanda e vista para o mar. Este hotel na Ericeira inclui um restaurante, dois bares, salas para eventos e reuniões empresariais, clube de crianças e parque infantil e um moderno clube de saúde com salas de massagens, jacuzzi, sauna, banho turco e ginásio.\nDurante a sua estadia no hotel A Ver o Mar, não deixe de dar um mergulho nas duas piscinas para adultos, uma das quais de água salgada. Já as crianças vão adorar os escorregas aquáticos.\nPartindo deste hotel na Ericeira, aventure-se a conhecer as praias da região. E saiba que se apreciar desportos de ondas, está em plena reserva mundial de surf, e palco de uma das etapas do circuito WSL World Tour que junta os melhores surfistas do mundo. Pode ainda visitar o Palácio Nacional de Mafra ou Sintra, a 20 minutos de distância do hotel A Ver o Mar, de carro.\nNo verão, a animação da vila aumenta graças a vários festivais, entre os quais um dedicado exclusivamente à música reggae.",
+            "adress": "Hotel A Ver o Mar\nLargo dos Navegantes\n2655-320 Ericeira\nPORTUGAL",
+            "coordinates": "38°57'56.0\"N 9°25'09.0\"W",
+            "phoneNumber": {
+                "id": 351, 
+                "number": 261869700
+            },
+            "email": "averomar@hoteispsi.com",
+            "images": ["hotel2_1","hotel2_2","hotel2_3","hotel2_4","hotel2_5","hotel2_6","hotel2_7","hotel2_8","hotel2_9","hotel2_10"],
+            "services": ["Jardins e espaços exteriores", "Piscina exterior para adultos e crianças", "Acesso gratuito à internet via wi-fi", "Parque de estacionamento", 
+                    "Nep Kids Club", "Parque infantil", "Sala de jogos", "Serviço de lavandaria", "Acessos para pessoas com mobilidade reduzida", "Clube de saúde", "Receção 24 horas"]
+            
+        },
+
+        {
+            "name": "Mediterrâneo",
+            "description": "Encontrará o Hotel Mediterrâneo mesmo junto à praia e apenas a cinco minutos do centro de Albufeira, no Algarve.\nEste hotel em Albufeira oferece quartos modernos e amplos, dos quais se destacam os com vista para o mar ou as suítes. Todos têm kitchenette, sendo ideais para famílias com crianças.\nConta ainda com um bar, um restaurante com buffet internacional e piscinas exteriores para adultos e crianças, prometendo dias de muito sol e animação. Tem ainda uma sala de jogos, parque infantil, clube de crianças com atividades para os mais novos e animadores próprios, spa com piscina interior, banho turco e jacuzzi, salas de massagem, ginásio e wi-fi gratuito em todas as zonas.\nDurante a sua estadia aproveite para conhecer as irresistíveis praias de Albufeira, aventurar-se em desportos náuticos ou desfrutar das animadas ruas da cidade, repletas de bares, restaurantes e comércio, ou passear na marina.\nPode também visitar diferentes parques temáticos como o Zoomarine, Aqualand e Aquashow.",
+            "adress": "Hotel Mediterrâneo\nPraia da Galé\n8200-995 Albufeira\nPORTUGAL",
+            "coordinates": "37°04'55.0\"N 8°19'03.0\"W",
+            "phoneNumber": {
+                "id": 351, 
+                "number":289570700 
+            },
+            "email": "mediterraneo@hoteispsi.com",
+            "images": ["hotel3_1","hotel3_2","hotel3_3","hotel3_4","hotel3_5","hotel3_6","hotel3_7","hotel3_8","hotel3_9","hotel3_10"],
+            "services": ["Jardins e espaços exteriores", "Piscina exterior para adultos e crianças", "Acesso gratuito à internet via wi-fi", "Parque de estacionamento*", 
+                "Nep Kids Club", "Parque infantil", "Sala de jogos", "Serviço de lavandaria**", "Acessos para pessoas com mobilidade reduzida", "Clube de Saúde***", "Receção 24 horas", 
+                "Lojas"]
+            
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+	"list":[
+		{
+			"hotel": {},
+			"name":"Quarto Standard" ,
+			"price_high_epoch": 270,
+			"price_low_epoch": 180,
+			"number_of_rooms": 3,
+			"services": []
+		},
+		{
+			"hotel": {},
+			"name":"Suíte" ,
+			"price_high_epoch": 330,
+			"price_low_epoch": 250,
+			"number_of_rooms": 1,
+			"services": []
+		},
+		{
+			"hotel": {},
+			"name": "Suíte Duplex",
+			"price_high_epoch": 350,
+			"price_low_epoch": 270,
+			"number_of_rooms": 1,
+			"services": [] 
+		},
+		{
+			"hotel": {},
+			"name": "Suíte Deluxe",
+			"price_high_epoch": 450,
+			"price_low_epoch": 310,
+			"number_of_rooms": 1,
+			"services": []
+		},
+
+
+		{
+			"hotel": {},
+			"name": "Quarto Standard",
+			"price_high_epoch": 160,
+			"price_low_epoch": 90,
+			"number_of_rooms": 182,
+			"services": []
+		},
+		{
+			"hotel": {},
+			"name": "Suíte Júnior",
+			"price_high_epoch": 180,
+			"price_low_epoch": 120,
+			"number_of_rooms": 5,
+			"services": []
+		},
+		{
+			"hotel": {},
+			"name": "Suíte Júnior Superior",
+			"price_high_epoch": 210,
+			"price_low_epoch": 130,
+			"number_of_rooms": 15,
+			"services": []
+		},
+
+		
+		{
+			"hotel": {},
+			"name": "Quarto Standard",
+			"price_high_epoch": 210,
+			"price_low_epoch": 70,
+			"number_of_rooms": 114,
+			"services": []
+		},
+		{
+			"hotel": {},
+			"name": "Suíte Júnior",
+			"price_high_epoch": 250,
+			"price_low_epoch": 90,
+			"number_of_rooms": 98,
+			"services": []
+		},
+		{
+			"hotel": {},
+			"name": "Suíte Sénior",
+			"price_high_epoch": 240,
+			"price_low_epoch": 120,
+			"number_of_rooms": 8,
+			"services": []
+		}
+	]
+}

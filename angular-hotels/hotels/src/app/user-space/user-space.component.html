@@ -1,0 +1,111 @@
+<div *ngIf="!currentUser">
+  <div class="container">
+    <div class="row text-center">
+        <h1>{{title}}</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <form [formGroup]="searchForm" method="POST">
+    
+        <div class="form-group">
+          <label for="nif">Email: </label>
+              <input type="text"
+                  class="form-control"
+                  required
+                  placeholder="E-MAIL"
+                  name="email"
+                  formControlName="email"/>
+        </div>
+  
+        <button
+          type="submit"
+          (click)="cancel()"
+          class="btn btn-danger pull-left"
+          id="cancelBtn"
+        >Cancel</button>
+  
+        <button
+          type="submit"
+          (click)="search(searchForm.value)"
+          class="btn btn-success pull-left"
+          [disabled]="!searchForm.valid"
+          id="createBtn"
+        >Search Reservations</button>
+  
+      </form>
+    </div>
+  </div>
+</div>
+<div *ngIf="currentUser">
+  <div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-12">
+            <label for="baixa">Preço mínimo &nbsp;&nbsp;</label>
+            <input name="baixa" id="baixa" type="number"/>
+        </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row justify-content-md-center">
+
+        <div class="col-md-4">
+          <label for="inicio">Data de inicio &nbsp;</label>
+          <input name="inicio" id="inicio" type="date"/>
+        </div>
+        <div class="col-md-4">
+          <label for="fim">Data de fim &nbsp;</label>
+          <input name="fim" id="fim" type="date"/>
+        </div>
+
+        <div class="btnWrapper">
+            <div class="button" (click)="filter()">
+              Filtrar
+            </div>
+            <div class="button" (click)="resetList()">
+              Limpar
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-md-center">
+
+      <div *ngIf="currentUser.length == 0; else hasReservations">
+        <p>O User não tem reservas</p>
+      </div>
+    
+      <ng-template #hasReservations>
+
+        <div class="container">
+          <div class="row text-center">
+              <h1>{{title}}</h1>
+          </div>
+        </div>
+        <div class="thumbnail">
+          <p>Nome: {{currentUser[0].name}}</p>
+          <p>NIF: {{currentUser[0].nif}}</p>
+          <p>Email: {{currentUser[0].email}}</p>
+          <p>Morada: {{currentUser[0].address}}</p>
+        </div>
+
+        <div class="container">
+          <div class="row text-center">
+              <h1>{{info.title}}</h1>
+          </div>
+        </div>
+        <div *ngFor="let reservation of currentUserToDisplay">
+          <div class="thumbnail">
+            <p><b>Hotel: </b> {{reservation.room_type.hotel.name}} <b>Quarto: </b> <span>{{reservation.room_type.name}}</span></p>
+            <p><b>Check-In: </b> <span>{{reservation.begin_date}}</span> <b> Check-Out: </b> <span>{{reservation.end_date}}</span></p>
+            <p><b>PRICE: </b> <span>{{reservation.price}}</span></p>
+          </div>
+        </div>
+      </ng-template>
+
+    </div>
+  </div>
+</div>

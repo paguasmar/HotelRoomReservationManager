@@ -1,0 +1,48 @@
+<div class="wrapper" *ngIf="hotel">
+    <div class="hotel" *ngIf="hotel">
+        <span class="name">{{hotel.name}}</span>
+        <div class="images">
+            <div class="leftImageWrapper">  
+                <img class="img-left" src="{{displayingImages[0]}}" (click)="changeImage(false)">
+            </div>
+            <div class="centerImageWrapper">
+                <img class="img-center" src="{{displayingImages[1]}}">
+            </div>
+            <div class="rightImageWrapper" >
+                <img class="img-right" src="{{displayingImages[2]}}" (click)="changeImage(true)"/>  
+            </div>
+            <img class="left-arrow" src="./assets/arrow.png" (click)="changeImage(false)"/>      
+            <img class="right-arrow" src="./assets/arrow.png" (click)="changeImage(true)"/>
+        </div>  
+        <br>
+        <div class="info">
+            <div class="info-1">
+                <b>Descrição: </b>
+                <span class="description">{{hotel.description}}</span>
+                <br>
+                <b>Localização</b>
+                <br>
+                <span class="coords">{{hotel.coordinates}}</span>
+                <br>
+                <div class="localizacao">
+                    <b>Contactos: </b>
+                    <span class="phone">{{hotel.phoneNumber.number}}</span>
+                    <br>
+                    <span class="email">{{hotel.email}}</span>
+                    <br>
+                </div>
+            </div>
+            <div class="servicos">
+                <b>Serviços:</b>
+                    <ul class="servicos-list">
+                        <li class="service" *ngFor="let service of hotel.services">
+                            {{service}}
+                        </li>
+                    </ul>
+            </div>
+            <div class="room-types" routerLink="/hotel/{{hotel._id}}/room_types">
+                Veja os tipos de quarto! Desde {{hotel.lower_price}} €
+            </div>
+        </div>
+    </div>
+</div>

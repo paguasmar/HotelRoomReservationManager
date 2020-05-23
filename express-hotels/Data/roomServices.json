@@ -1,0 +1,26 @@
+{
+    "list":[    {"name": "Telefone"}, 
+				{"name": "Wi-fi gratuito"}, 
+				{"name": "Ar condicionado"}, 
+				{"name": "Televisão LED"}, 
+				{"name": "Canais por cabo"}, 
+				{"name": "Mini-bar"}, 
+				{"name": "Cofre"}, 
+				{"name": "Casa de banho privativa com telefone"} ,
+				{"name": "Secador de cabelo"}, 
+				{"name": "Espelho de maquilhagem"},
+				{"name": "Produtos de higiene pessoal gratuitos"}, 
+				{"name": "Fechadura eletrónica de segurança"}, 
+				{"name": "Roupão e chinelos"}, 
+                {"name": "Maquina de café"},
+                {"name": "Sala-de-estar"},
+                {"name": "Serviço de quarto 24 horas"},
+                {"name": "Televisão LCD"},
+                {"name": "Chaleira"},
+                {"name": "Varanda"},
+                {"name": "Kitchenette"},
+                {"name": "Frigorífico"},
+                {"name": "Micro-ondas"},
+                {"name": "Sofá-cama"}
+    ]
+}

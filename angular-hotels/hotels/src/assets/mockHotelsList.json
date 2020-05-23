@@ -1,0 +1,40 @@
+{
+    "title":"Hotels Home",
+    "error":null,
+    "hotel_list":[{
+      "phoneNumber":{"id":351,"number":289570700},
+      "images":["hotel3_1","hotel3_2","hotel3_3","hotel3_4","hotel3_5","hotel3_6","hotel3_7","hotel3_8","hotel3_9","hotel3_10"],
+      "services":["Jardins e espaços exteriores","Piscina exterior para adultos e crianças","Acesso gratuito à internet via wi-fi","Parque de estacionamento*","Nep Kids Club","Parque infantil","Sala de jogos","Serviço de lavandaria**","Acessos para pessoas com mobilidade reduzida","Clube de Saúde***","Receção 24 horas","Lojas"],
+      "_id":"5ea6e45acb12576f390d51b6",
+      "name":"Mediterrâneo",
+      "description":"Encontrará o Hotel Mediterrâneo mesmo junto à praia e apenas a cinco minutos do centro de Albufeira, no Algarve.\nEste hotel em Albufeira oferece quartos modernos e amplos, dos quais se destacam os com vista para o mar ou as suítes. Todos têm kitchenette, sendo ideais para famílias com crianças.\nConta ainda com um bar, um restaurante com buffet internacional e piscinas exteriores para adultos e crianças, prometendo dias de muito sol e animação. Tem ainda uma sala de jogos, parque infantil, clube de crianças com atividades para os mais novos e animadores próprios, spa com piscina interior, banho turco e jacuzzi, salas de massagem, ginásio e wi-fi gratuito em todas as zonas.\nDurante a sua estadia aproveite para conhecer as irresistíveis praias de Albufeira, aventurar-se em desportos náuticos ou desfrutar das animadas ruas da cidade, repletas de bares, restaurantes e comércio, ou passear na marina.\nPode também visitar diferentes parques temáticos como o Zoomarine, Aqualand e Aquashow.",
+      "adress":"Hotel Mediterrâneo\nPraia da Galé\n8200-995 Albufeira\nPORTUGAL",
+      "coordinates":"37°04'55.0\"N 8°19'03.0\"W",
+      "email":"mediterraneo@hoteispsi.com",
+      "__v":0
+    },
+    {
+      "phoneNumber":{"id":351,"number":289570700},
+      "images":["hotel3_1","hotel3_2","hotel3_3","hotel3_4","hotel3_5","hotel3_6","hotel3_7","hotel3_8","hotel3_9","hotel3_10"],
+      "services":["Jardins e espaços exteriores","Piscina exterior para adultos e crianças","Acesso gratuito à internet via wi-fi","Parque de estacionamento*","Nep Kids Club","Parque infantil","Sala de jogos","Serviço de lavandaria**","Acessos para pessoas com mobilidade reduzida","Clube de Saúde***","Receção 24 horas","Lojas"],
+      "_id":"5ea6e45acb12576f390d51b6",
+      "name":"Mediterrâneo",
+      "description":"Encontrará o Hotel Mediterrâneo mesmo junto à praia e apenas a cinco minutos do centro de Albufeira, no Algarve.\nEste hotel em Albufeira oferece quartos modernos e amplos, dos quais se destacam os com vista para o mar ou as suítes. Todos têm kitchenette, sendo ideais para famílias com crianças.\nConta ainda com um bar, um restaurante com buffet internacional e piscinas exteriores para adultos e crianças, prometendo dias de muito sol e animação. Tem ainda uma sala de jogos, parque infantil, clube de crianças com atividades para os mais novos e animadores próprios, spa com piscina interior, banho turco e jacuzzi, salas de massagem, ginásio e wi-fi gratuito em todas as zonas.\nDurante a sua estadia aproveite para conhecer as irresistíveis praias de Albufeira, aventurar-se em desportos náuticos ou desfrutar das animadas ruas da cidade, repletas de bares, restaurantes e comércio, ou passear na marina.\nPode também visitar diferentes parques temáticos como o Zoomarine, Aqualand e Aquashow.",
+      "adress":"Hotel Mediterrâneo\nPraia da Galé\n8200-995 Albufeira\nPORTUGAL",
+      "coordinates":"37°04'55.0\"N 8°19'03.0\"W",
+      "email":"mediterraneo@hoteispsi.com",
+      "__v":0
+    },
+    {
+      "phoneNumber":{"id":351,"number":289570700},
+      "images":["hotel3_1","hotel3_2","hotel3_3","hotel3_4","hotel3_5","hotel3_6","hotel3_7","hotel3_8","hotel3_9","hotel3_10"],
+      "services":["Jardins e espaços exteriores","Piscina exterior para adultos e crianças","Acesso gratuito à internet via wi-fi","Parque de estacionamento*","Nep Kids Club","Parque infantil","Sala de jogos","Serviço de lavandaria**","Acessos para pessoas com mobilidade reduzida","Clube de Saúde***","Receção 24 horas","Lojas"],
+      "_id":"5ea6e45acb12576f390d51b6",
+      "name":"Mediterrâneo",
+      "description":"Encontrará o Hotel Mediterrâneo mesmo junto à praia e apenas a cinco minutos do centro de Albufeira, no Algarve.\nEste hotel em Albufeira oferece quartos modernos e amplos, dos quais se destacam os com vista para o mar ou as suítes. Todos têm kitchenette, sendo ideais para famílias com crianças.\nConta ainda com um bar, um restaurante com buffet internacional e piscinas exteriores para adultos e crianças, prometendo dias de muito sol e animação. Tem ainda uma sala de jogos, parque infantil, clube de crianças com atividades para os mais novos e animadores próprios, spa com piscina interior, banho turco e jacuzzi, salas de massagem, ginásio e wi-fi gratuito em todas as zonas.\nDurante a sua estadia aproveite para conhecer as irresistíveis praias de Albufeira, aventurar-se em desportos náuticos ou desfrutar das animadas ruas da cidade, repletas de bares, restaurantes e comércio, ou passear na marina.\nPode também visitar diferentes parques temáticos como o Zoomarine, Aqualand e Aquashow.",
+      "adress":"Hotel Mediterrâneo\nPraia da Galé\n8200-995 Albufeira\nPORTUGAL",
+      "coordinates":"37°04'55.0\"N 8°19'03.0\"W",
+      "email":"mediterraneo@hoteispsi.com",
+      "__v":0
+    }]
+  }
