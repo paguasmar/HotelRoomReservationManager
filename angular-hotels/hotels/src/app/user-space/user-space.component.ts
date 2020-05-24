@@ -42,7 +42,6 @@ export class UserSpaceComponent implements OnInit {
             this.currentUserToDisplay[i].begin_date = this.datePipe.transform(this.currentUserToDisplay[i].begin_date,'yyyy-MM-dd');
             this.currentUserToDisplay[i].end_date = this.datePipe.transform(this.currentUserToDisplay[i].end_date,'yyyy-MM-dd');
           }
-          console.log(this.currentUserToDisplay);
         });
   }
 
@@ -115,6 +114,17 @@ export class UserSpaceComponent implements OnInit {
 
   redirectToRooms() {
     this.router.navigateByUrl("/home");
+  }
+
+  isFutureReservation(reservation){
+    let begin_date = new Date(reservation.begin_date);
+    let now = new Date();
+    return begin_date > now;
+  }
+
+  redirectEditReservation(reservation){
+    this.service.setReservation(reservation);
+    this.router.navigateByUrl("users/reserva/editar");
   }
 
 }

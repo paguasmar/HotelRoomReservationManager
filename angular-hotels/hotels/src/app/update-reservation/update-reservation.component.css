@@ -1,0 +1,59 @@
+.title{
+    text-align: center;
+    font-size: x-large;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.info{
+    width: 40%;
+    height: 450px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 30%; 
+    margin-top: 15%; 
+}
+
+.date{
+    width: 200px;
+}
+
+.button{
+    display: inline-block;
+    width: 20%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnd{
+    margin-left: 30%;
+    margin-right: 2%;
+}
+
+.btna{
+    margin-left: 40%;
+}
+
+.msg{
+    margin-top: 20%;
+    font-size: x-large;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .info{
+        width: 80%;
+    }
+
+    ul{
+        margin-left: 10%;
+    }
+}

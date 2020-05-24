@@ -14,6 +14,8 @@ import { RoomTypeService } from './room-type.service';
 import { BookingConfirmationComponent } from './booking-confirmation/booking-confirmation.component';
 import { BookService } from './book.service';
 import { UserSpaceComponent } from './user-space/user-space.component';
+import { UpdateReservationComponent } from './update-reservation/update-reservation.component';
+import { UserSpaceService } from './user-space.service';
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { UserSpaceComponent } from './user-space/user-space.component';
     RoomTypesComponent,
     BookRoomComponent,
     BookingConfirmationComponent,
-    UserSpaceComponent
+    UserSpaceComponent,
+    UpdateReservationComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,7 @@ import { UserSpaceComponent } from './user-space/user-space.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [RoomTypeService,BookService,DatePipe],
+  providers: [RoomTypeService,BookService,DatePipe, UserSpaceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

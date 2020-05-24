@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { getBookingUrl } from './routingPaths';
+import { getBookingUrl,getReservationUpdateUrl } from './routingPaths';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
@@ -37,5 +37,17 @@ export class BookService {
   createReservation(){
     let data = this.dataSource.getValue();
     return this.http.post(getBookingUrl(data.room_type._id),data);
+  }
+
+  updateReservation(id,begin_date,end_date,card_number,expiration_date,cvv){
+    let data = this.getInfo();
+    return this.http.post(getReservationUpdateUrl(),{
+      id: id,
+      begin_date: begin_date,
+      end_date: end_date,
+      card_number: card_number,
+      expiration_date: expiration_date,
+      cvv: cvv
+    });
   }
 }

@@ -79,7 +79,6 @@
       </div>
     
       <ng-template #hasReservations>
-
         <div class="container">
           <div class="row text-center">
               <h1>{{title}}</h1>
@@ -101,7 +100,10 @@
           <div class="thumbnail">
             <p><b>Hotel: </b> {{reservation.room_type.hotel.name}} <b>Quarto: </b> <span>{{reservation.room_type.name}}</span></p>
             <p><b>Check-In: </b> <span>{{reservation.begin_date}}</span> <b> Check-Out: </b> <span>{{reservation.end_date}}</span></p>
-            <p><b>PRICE: </b> <span>{{reservation.price}}</span></p>
+            <p><b>Preço: </b> <span>{{reservation.price}} €</span></p>
+            <div *ngIf="isFutureReservation(reservation)" class="button" (click)="redirectEditReservation(reservation)">
+              Editar Reserva
+            </div>
           </div>
         </div>
       </ng-template>

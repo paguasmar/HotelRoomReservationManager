@@ -1,0 +1,75 @@
+<div class="wrapper" *ngIf="reservation">
+    <div class="title">Editar de reserva</div>
+    <div class="info" *ngIf="!confirmationFase; else newData">
+        <ul>
+            <li><b>Reserva no hotel :</b>{{reservation.room_type.hotel.name}}</li>
+            <li><b>Reserva no quarto :</b>{{reservation.room_type.name}}</li>
+            <div class="date">
+                <label for="beginDate">Data de inicio da reserva:</label>
+                <input type="date"
+                    class="form-control"
+                    [(ngModel)]="reservation.begin_date"
+                    name="beginDate"
+                    (input) = "calculateNewPrice()"/>
+            </div>
+            <div class="date">
+                <label for="endDate">Data de fim da reserva:</label>
+                <input type="date"
+                    id="endDate"
+                    class="form-control"
+                    [(ngModel)]="reservation.end_date"
+                    name="endDate"
+                    (input) = "calculateNewPrice()"/>
+             </div>
+            <li><b>Novo preço final: </b>{{price}} €</li>
+        </ul>  
+        <div class="buttons">
+            <div class="button btna" (click)="move(true)">Prosseguir</div>
+        </div>
+    </div>    
+    <ng-template #newData>
+        <div class="info">
+            <div *ngIf="price<=reservation.price; else newCard">
+                <div class="msg">
+                    O pagamento será efetuado no cartão previamente indicado para pagar
+                </div>
+            </div>
+            <ng-template #newCard>
+                <div class="msg">
+                    Confirme com que cartão de multibanco quer pagar:
+                </div>
+                <div>
+                    <label for="cardNumber">Número do cartão de multibanco: </label>
+                        <input type="number"
+                            class="form-control"
+                            required
+                            [(ngModel)]="reservation.card.card_number"
+                            placeholder="Número do cartão"
+                            name="cardNumber"/>
+                </div>
+                <div>
+                    <label for="validade">Prazo de validade do cartão: </label>
+                        <input type="date"
+                            class="form-control"
+                            required
+                            [(ngModel)]="reservation.card.expiration_date"
+                            placeholder="Validade do cartão"
+                            name="validade"/>
+                </div>
+                <div>
+                    <label for="cvv">Cvv do cartão: </label>
+                        <input type="number"
+                            class="form-control"
+                            required
+                            [(ngModel)]="reservation.card.cvv"
+                            placeholder="cvv do cartão"
+                            name="cvv"/>
+                </div>
+            </ng-template>
+            <div class="buttons">
+                <div class="btnd button" (click)="move(false)">Anterior</div>
+                <div class="button" (click)="book()">Confimar!</div>
+            </div>
+        </div>
+    </ng-template>
+</div>

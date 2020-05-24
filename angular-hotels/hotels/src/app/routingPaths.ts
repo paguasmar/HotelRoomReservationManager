@@ -10,7 +10,11 @@ export function getHotelUrl(hotel_id){
 
 export function getBookingUrl(room_type_id){
     return ROOM_TYPE + room_type_id + "/reservation/create";
-}  
+} 
+
+export function getReservationUpdateUrl(){
+    return ROOM_TYPE + "/reservation/update";
+}
 
 export function getRoomsAtUrl(hotel_id,beginDate, endDate){
     return HOTEL + hotel_id + "/room_type/free?beginDate=" + beginDate + "&endDate=" + endDate;

@@ -69,6 +69,8 @@ export class BookRoomComponent implements OnInit {
     //check if all the info is alright
     if(new Date(info.beginDate) > new Date(info.endDate))
       alert("O periodo de datas tem de ser válido");
+    else if(info.beginDate <= new Date())
+      alert("A data de inicio tem de ser depois de hoje");
     else if(info.name == "")
       alert("O campo nome não pode estar vazio");
     else if(info.email == "")
@@ -83,9 +85,11 @@ export class BookRoomComponent implements OnInit {
       alert("O nif não é válido")
     else if(info.address == "")
       alert("A morada não pode estar vazia");
+    else if(info.cvv < 100 || info.cvv > 999)
+      alert("O cvv não é válido");
     else{
       this.bookingService.setData(info.name,info.room,this.price,info.beginDate,info.endDate, info.email,
-        info.cardNumber, info.code + "" + info.telephone,info.address,info.nif,info.ccv,info.validade);
+        info.cardNumber, info.code + "" + info.telephone,info.address,info.nif,info.cvv,info.validade);
       this.router.navigateByUrl("hotel/room_type/book/confirm");
     }
   }
@@ -117,21 +121,4 @@ export class BookRoomComponent implements OnInit {
   calculateNewPrice(){
     this.price = this.service.getPrice(this.room_type,new Date(this.beginDate),new Date(this.endDate));
   }
-
-  /*
-  newBookRoom(bookRoom) {
-    this.service.newBookRoom(bookRoom)
-        .subscribe(returned => {
-          this.redirectToRooms();
-        });
-  }
-
-  cancel() {
-    this.redirectToRooms();
-  }
-
-  redirectToRooms() {
-    this.router.navigateByUrl("/hotel/" + this.hotel._id + "/room_types");
-  }
-  */
 }

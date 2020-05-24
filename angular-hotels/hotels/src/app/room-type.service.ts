@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { getRoomsUrl, getRoomsAtUrl,getIsRoomTypeFreeUrl } from './routingPaths';
+import { getRoomsUrl, getIsRoomTypeFreeUrl } from './routingPaths';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({

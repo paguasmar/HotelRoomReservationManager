@@ -105,7 +105,7 @@ export class RoomTypesComponent implements OnInit {
   async filterDate(){
     let beginDate = (document.getElementById("inicio")as HTMLInputElement).value;
     let endDate = (document.getElementById("fim") as HTMLInputElement).value;
-    if(endDate < beginDate){
+    if(endDate <= beginDate){
       alert('A data de fim tem de ser depois da data de inicio');
       return;
     }

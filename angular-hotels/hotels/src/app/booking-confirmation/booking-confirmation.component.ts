@@ -15,8 +15,6 @@ export class BookingConfirmationComponent implements OnInit {
 
   ngOnInit() {
     this.info = this.service.getInfo();
-    console.log(this.info);
-    
   }
 
   cancel(){
