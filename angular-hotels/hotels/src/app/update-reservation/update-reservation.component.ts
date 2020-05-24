@@ -53,8 +53,8 @@ export class UpdateReservationComponent implements OnInit {
         alert("A data de inicio da reserva tem de ser depois da data de hoje!");
       else{
         this.bookService.updateReservation(this.reservation._id,this.reservation.begin_date,
-          this.reservation.end_date,this.reservation.card.card_number,this.reservation.card.expiration_date,
-          this.reservation.card.cvv).subscribe(r => {
+          this.reservation.end_date,this.reservation.card_number,this.reservation.expiration_date,
+          this.reservation.cvv,this.price).subscribe(r => {
           let info :any = r;
           if(info.result)
             alert("Reserva feita atualizada com sucesso!");
@@ -62,7 +62,7 @@ export class UpdateReservationComponent implements OnInit {
             alert("Não foi possivel reservar este quarto.");
       
           //this.router.navigateByUrl("user home page");   
-          this.router.navigateByUrl("/hotel/" + this.reservation.room_type.hotel._id + "/room_types");   
+          this.router.navigateByUrl("/home");   
       });
     }
     }

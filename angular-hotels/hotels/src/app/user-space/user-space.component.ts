@@ -57,10 +57,10 @@ export class UserSpaceComponent implements OnInit {
 
     let res = [];
 
-    for(let i = 0; i < this.currentUserToDisplay.length; i++){
-      let reservationPrice = this.currentUserToDisplay[i].price;
+    for(let i = 0; i < this.currentUser.length; i++){
+      let reservationPrice = this.currentUser[i].price;
       if(reservationPrice > minPrice) // reservation price higher than given min value
-        res.push(this.currentUserToDisplay[i]);
+        res.push(this.currentUser[i]);
     }
     this.currentUserToDisplay = res;
   }

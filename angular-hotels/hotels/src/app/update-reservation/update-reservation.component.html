@@ -43,7 +43,7 @@
                         <input type="number"
                             class="form-control"
                             required
-                            [(ngModel)]="reservation.card.card_number"
+                            [(ngModel)]="reservation.card_number"
                             placeholder="Número do cartão"
                             name="cardNumber"/>
                 </div>
@@ -52,7 +52,7 @@
                         <input type="date"
                             class="form-control"
                             required
-                            [(ngModel)]="reservation.card.expiration_date"
+                            [(ngModel)]="reservation.expiration_date"
                             placeholder="Validade do cartão"
                             name="validade"/>
                 </div>
@@ -61,7 +61,7 @@
                         <input type="number"
                             class="form-control"
                             required
-                            [(ngModel)]="reservation.card.cvv"
+                            [(ngModel)]="reservation.cvv"
                             placeholder="cvv do cartão"
                             name="cvv"/>
                 </div>

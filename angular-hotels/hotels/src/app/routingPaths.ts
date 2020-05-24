@@ -13,7 +13,7 @@ export function getBookingUrl(room_type_id){
 } 
 
 export function getReservationUpdateUrl(){
-    return ROOM_TYPE + "/reservation/update";
+    return ROOM_TYPE + "reservation/update";
 }
 
 export function getRoomsAtUrl(hotel_id,beginDate, endDate){

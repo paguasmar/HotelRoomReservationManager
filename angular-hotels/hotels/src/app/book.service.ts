@@ -39,7 +39,7 @@ export class BookService {
     return this.http.post(getBookingUrl(data.room_type._id),data);
   }
 
-  updateReservation(id,begin_date,end_date,card_number,expiration_date,cvv){
+  updateReservation(id,begin_date,end_date,card_number,expiration_date,cvv,price){
     let data = this.getInfo();
     return this.http.post(getReservationUpdateUrl(),{
       id: id,
@@ -47,7 +47,8 @@ export class BookService {
       end_date: end_date,
       card_number: card_number,
       expiration_date: expiration_date,
-      cvv: cvv
+      cvv: cvv,
+      price: price
     });
   }
 }
