@@ -31,5 +31,9 @@ router.post('/hotel/room_type/:id/reservation/create', reservation_controller.re
 router.get('/reservation/:email', client_controller.client_reservation_list);
 
 
+//POST request to update client´s reservation
+router.post('/hotel/room_type/reservation/update', client_controller.client_update_reservation);
+
+
 
 module.exports = router;
