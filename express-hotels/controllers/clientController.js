@@ -63,8 +63,9 @@ exports.client_update_reservation = [
       function(reservation,callback){
         Reservation.find({"room_type":reservation.room_type._id}).populate('room_type').exec(
           function (err,reservations){
-            if(!hasAvailableRoomsAt(reservations[0].room_type,reservations,reservation.beginDate,reservation.endDate)){
-              res.json({ title: 'Update Reservation', result: false , error:err});
+            if(!hasAvailableRoomsAt(reservations[0].room_type,reservations,reservation.begin_date,reservation.end_date)){
+              	res.json({ title: 'Update Reservation', result: false , error:err});
+		return;
             }
             callback(null,reservation);          
           }
@@ -89,6 +90,10 @@ console.log(res);
   for(let i = 0; i < reservations.length; i++){
     let reservation_begin = reservations[i].begin_date;
     let reservation_end = reservations[i].end_date;
+	console.log(reservation_begin);
+	console.log(reservation_end);
+	console.log(beginDate);
+	console.log(endDate);
     if( (reservation_begin >= beginDate && reservation_end <= endDate) || //d1---r1---r2---d2
         (reservation_begin >= beginDate && reservation_begin <= endDate) || //d1----r1--d2--r2
         (reservation_end >= beginDate && reservation_end <= endDate) ||  //r1---d1---r2----d2
