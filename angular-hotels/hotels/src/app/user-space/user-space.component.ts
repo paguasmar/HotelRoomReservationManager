@@ -72,29 +72,17 @@ export class UserSpaceComponent implements OnInit {
     if(beginDate == "")
       return;
 
-    let endDate = (document.getElementById("fim") as HTMLInputElement).value;
-    if(endDate == "") { // exists beginDate but not endDate
-      alert('Tem de fornecer data de inicio e de fim: Verificar Reserva entre datas');
-      return;
-    }
-
-    if(endDate < beginDate){
-      alert('A data de fim tem de ser depois da data de inicio');
-      return;
-    }
-
-    this.filterBetweenDates(beginDate, endDate);
+    this.filterBetweenDates(beginDate);
   }
 
   // filter the elements to display by dates
-  filterBetweenDates(beginDate, endDate){
+  filterBetweenDates(beginDate){
 
     let res = [];
     
     for (let i = 0; i < this.currentUser.length; i++) {
       let beginDateReserv = this.currentUser[i].begin_date;
-      let endDateReserv = this.currentUser[i].end_date;
-      if (beginDateReserv >= beginDate && endDateReserv <= endDate) {
+      if (beginDateReserv >= beginDate) {
         res.push(this.currentUser[i]);
       }
     }
