@@ -60,13 +60,13 @@ exports.client_update_reservation = [
         });
         callback(null, newReservation);
       },
-      function(reservartion,callback){
+      function(reservation,callback){
         Reservation.find({"room_type":reservation.room_type._id}).populate('room_type').exec(
           function (err,reservations){
             if(!hasAvailableRoomsAt(reservartions[0].room_type,reservations,reservation.beginDate,reservation.endDate)){
               res.json({ title: 'Update Reservation', result: false , error:err});
             }
-            callback(null,reservartion);          
+            callback(null,reservation);          
           }
         );
       }
