@@ -92,7 +92,6 @@ export class UserSpaceComponent implements OnInit {
 
   resetList(){
     (document.getElementById("inicio") as HTMLInputElement).value = "";
-    (document.getElementById("fim")  as HTMLInputElement).value = "";
     (document.getElementById("baixa") as HTMLInputElement).value = "";
     this.currentUserToDisplay = this.currentUser;
   }
