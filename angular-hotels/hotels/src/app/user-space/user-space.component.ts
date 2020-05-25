@@ -38,6 +38,7 @@ export class UserSpaceComponent implements OnInit {
           this.info = r;
           this.currentUser = this.info.reservation_list;
           this.currentUserToDisplay = this.currentUser;
+          console.log(this.currentUser);
           for(let i = 0; i < this.currentUserToDisplay.length; i++){
             this.currentUserToDisplay[i].begin_date = this.datePipe.transform(this.currentUserToDisplay[i].begin_date,'yyyy-MM-dd');
             this.currentUserToDisplay[i].end_date = this.datePipe.transform(this.currentUserToDisplay[i].end_date,'yyyy-MM-dd');

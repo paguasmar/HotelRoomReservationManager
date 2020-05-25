@@ -69,7 +69,7 @@ export class BookRoomComponent implements OnInit {
     //check if all the info is alright
     if(new Date(info.beginDate) > new Date(info.endDate))
       alert("O periodo de datas tem de ser válido");
-    else if(info.beginDate <= new Date())
+    else if(new Date(info.beginDate) <= new Date())
       alert("A data de inicio tem de ser depois de hoje");
     else if(info.name == "")
       alert("O campo nome não pode estar vazio");
