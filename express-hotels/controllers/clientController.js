@@ -60,6 +60,17 @@ exports.client_update_reservation = [
         });
         callback(null, newReservation);
       },
+      function(reservartion,callback){
+        Reservation.find({"room_type":reservation.room_type._id}).populate('room_type').exec(
+          function (err,reservations){
+            if(!hasAvailableRoomsAt(reservartions[0].room_type,reservations,reservation.beginDate,reservation.endDate)){
+              res.json({ title: 'Update Reservation', result: false , error:err});
+            }
+            callback(null,reservartion);          
+          }
+        );
+      }
+      ,
       function(newReservation, callback){
         Reservation.findByIdAndUpdate(req.body.id, newReservation, {}, function (err,thereservation) {
           if (err) { 
@@ -69,7 +80,22 @@ exports.client_update_reservation = [
            }
          );
       }
-    ])
-    
-    
+    ])    
 }]
+
+function hasAvailableRoomsAt(room_type,reservations,beginDate, endDate){
+  let res = room_type.number_of_rooms;
+console.log(res);
+  for(let i = 0; i < reservations.length; i++){
+    let reservation_begin = reservations[i].begin_date;
+    let reservation_end = reservations[i].end_date;
+    if( (reservation_begin >= beginDate && reservation_end <= endDate) || //d1---r1---r2---d2
+        (reservation_begin >= beginDate && reservation_begin <= endDate) || //d1----r1--d2--r2
+        (reservation_end >= beginDate && reservation_end <= endDate) ||  //r1---d1---r2----d2
+        (reservation_begin <= beginDate && reservation_end >= endDate) //r1---d1-----d2----r2
+        ){
+          res--;
+       }
+  }
+  return res > 0;
+};
